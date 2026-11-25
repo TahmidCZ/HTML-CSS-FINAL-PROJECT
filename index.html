@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>NEONCORE — Join The Nexus</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="main-container">
+			<div class="main-left">
+				<div>
+					<div class="brand">
+						<span class="brand-icon"></span>
+						<span>NEONCORE</span>
+					</div>
+					<h1 class="title"><span class="slash">//</span>JOIN THE<br>NEXUS</h1>
+					<p class="description">INITIALIZE YOUR NEONCORE IDENTITY</p>
+				</div>
+				<div class="status-block">
+					<div class="divider"></div>
+					<div class="status-header">
+						<span>OPERATOR ID</span>
+						<span>0/5 READY</span>
+					</div>
+					<div class="status-title">UNASSIGNED</div>
+					<ul class="status-list">
+						<li class="status-item">
+							<span class="status-label">CALLSIGN</span>
+							<span class="status-dots"></span>
+							<span class="status-state">PENDING</span>
+						</li>
+						<li class="status-item">
+							<span class="status-label">EMAIL</span>
+							<span class="status-dots"></span>
+							<span class="status-state">PENDING</span>
+						</li>
+						<li class="status-item">
+							<span class="status-label">PASSWORD</span>
+							<span class="status-dots"></span>
+							<span class="status-state">PENDING</span>
+						</li>
+						<li class="status-item">
+							<span class="status-label">CONFIRM</span>
+							<span class="status-dots"></span>
+							<span class="status-state">PENDING</span>
+						</li>
+						<li class="status-item">
+							<span class="status-label">TERMS</span>
+							<span class="status-dots"></span>
+							<span class="status-state">REQUIRED</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-right">
+				<form class="form-card">
+					<div class="card-top">
+						<span>NEW OPERATOR</span>
+						<span>ALL FIELDS REQUIRED</span>
+					</div>
+					<div class="form-group">
+						<label class="field-label" for="callsign"><span class="prompt">&gt;</span>CALLSIGN</label>
+						<div class="input-box">
+							<input type="text" id="callsign" placeholder="e.g. Vortex_07" autocomplete="off">
+						</div>
+						<p class="field-hint">3-20 characters: letters, numbers, _ or -</p>
+					</div>
+					<div class="form-group">
+						<label class="field-label" for="email"><span class="prompt">&gt;</span>EMAIL</label>
+						<div class="input-box">
+							<input type="email" id="email" placeholder="you@example.com">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="field-label" for="password"><span class="prompt">&gt;</span>PASSWORD</label>
+						<div class="input-box">
+							<input type="password" id="password">
+						</div>
+						<div class="password-strength">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<p class="field-hint">At least 8 characters</p>
+					</div>
+					<div class="form-group">
+						<label class="field-label" for="confirm-password"><span class="prompt">&gt;</span>CONFIRM PASSWORD</label>
+						<div class="input-box">
+							<input type="password" id="confirm-password" autocomplete="new-password">
+						</div>
+					</div>
+					<div class="terms-row">
+						<input type="checkbox" id="terms">
+						<label for="terms">I accept the <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</label>
+					</div>
+					<button type="submit" class="submit-btn">INITIALIZE ACCOUNT</button>
+					<div class="card-footer">Already an operator? <a href="#">Log in</a></div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
